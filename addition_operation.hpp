@@ -1,0 +1,8 @@
+//
+// Created by joelc on 2019-10-18.
+//
+
+#ifndef LAB5_ADDITION_OPERATION_HPP
+#define LAB5_ADDITION_OPERATION_HPP
+
+#endif //LAB5_ADDITION_OPERATION_HPP
