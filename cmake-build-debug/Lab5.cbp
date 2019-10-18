@@ -98,6 +98,12 @@
 		<Unit filename="/cygdrive/c/Users/joelc/CLionProjects/Lab5/operation.hpp">
 			<Option target="Lab5"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/joelc/CLionProjects/Lab5/rpn_calculator.cpp">
+			<Option target="Lab5"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/joelc/CLionProjects/Lab5/rpn_calculator.hpp">
+			<Option target="Lab5"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/joelc/CLionProjects/Lab5/subtraction_operation.hpp">
 			<Option target="Lab5"/>
 		</Unit>
