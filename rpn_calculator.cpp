@@ -2,6 +2,8 @@
 // Created by joelc on 2019-10-18.
 //
 
+#include <cctype>
+#include <sstream>
 #include "rpn_calculator.hpp"
 
 operation *rpn_calculator::operation_type(char type) {
@@ -20,5 +22,30 @@ operation *rpn_calculator::operation_type(char type) {
 }
 
 void rpn_calculator::perform(operation *op) {
-    
+    int e = stack.top();
+    stack.pop();
+
+    int r = stack.top();
+    stack.pop();
+
+    result = op->perform(r, e);
+    stack.push(result);
+
+
+}
+
+int rpn_calculator::process_form(string formula) {
+    istringstream iss(formula);
+    string operand;
+    while (iss >> operand) {
+        istringstream iss2(operand);
+        int n;
+        if (iss2 >> n) {
+            stack.push(n);
+        } else {
+            perform(operation_type(operand[0]));
+        }
+
+    }
+    return result;
 }
